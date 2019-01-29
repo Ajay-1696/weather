@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<ul>
+	
+	<div class="col-sm-2" style="border-top-style: black   ;margin-top: 35px"><strong><a routerLink="home" routerLinkActive="active">home</a></strong></div>
+	<div class="col-sm-2" style="border-top-style: black   ;margin-top: 35px"><strong><a routerLink="list" routerLinkActive="active">Songs</a></strong></div>
+
+	<div class="col-sm-2" style="margin-top: 35px"><strong><a routerLink="addsongs" routerLinkActive="active">Add Songs</a></strong></div>
+	 
+
+	<div class="col-sm-2"  style="margin-top: 35px"><strong><a *ngIf="!flag" routerLink="signin" routerLinkActive="active">Sign up</a></strong></div>
+
+	<div class="col-sm-2" style="margin-top: 35px"><strong><a *ngIf="!flag" routerLink="login" routerLinkActive="active">Login</a></strong></div>
+	<div class="col-sm-2" style="margin-top: 35px"><strong><a *ngIf="flag" routerLink="login" routerLinkActive="active" (click)="this.aa.logo()">Logout</a></strong></div>
+	</ul>
+
+</div>
+
